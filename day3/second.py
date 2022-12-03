@@ -17,7 +17,6 @@ accumulated_counter = 0
 for i in range(0, N, 3):
 	common = set(data[i]).intersection(data[i+1]).intersection(data[i+2])
 	common.remove('\n')
-	print(common)
 	accumulated_counter += getPoints(common.pop())
 
 print("Points:", accumulated_counter)
